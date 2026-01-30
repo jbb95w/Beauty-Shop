@@ -13,12 +13,12 @@ pydantic-settings = "*"
 python-multipart = "*"
 python-jose = {extras = ["cryptography"], version = "*"}
 passlib = {extras = ["bcrypt"], version = "*"}
-fastapi = "*"
-uvicorn = "*"
 sqlalchemy = "*"
 psycopg2-binary = "*"
+fastapi = "*"
+uvicorn = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3.12.3"
