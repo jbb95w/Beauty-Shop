@@ -8,7 +8,7 @@ class Order(Base):
     
     id= Column(Integer,primary_key=True,index=True)
     total_price=Column(Numeric(10,2), nullable = True)
-    status = Column(String)
+    status = Column(String,default="pending")
     mpesa_checkout_id =Column(String)
     mpesa_receipt =Column(String,index=True)
     phone_number=Column(String)
@@ -19,3 +19,4 @@ class Order(Base):
     
     #relationship
     user =relationship("User",back_populates="orders")
+    items = relationship("OrderItem", back_populates="order")

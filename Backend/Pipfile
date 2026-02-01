@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-alembic = "*"
 python-dotenv = "*"
 httpx = "*"
 fpdf2 = "*"
@@ -17,6 +16,7 @@ sqlalchemy = "*"
 psycopg2-binary = "*"
 fastapi = "*"
 uvicorn = "*"
+alembic = "*"
 
 [dev-packages]
 
